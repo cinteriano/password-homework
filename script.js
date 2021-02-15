@@ -31,9 +31,9 @@ alert("Your password will be" + confirmLength + "characters long ")
 
 
 var confirmNumbers = confirm("Would you like numbers in your password?")
-var confirmLowerCase = confirm()
-var confirmUpperCase = confirm()
-var confirmSpecialCharacters = confirm()
+var confirmLowerCase = confirm("Would you like lower case letters in your password?")
+var confirmUpperCase = confirm("Would you like upper case letters in your password?")
+var confirmSpecialCharacters = confirm("Would you liker special characters in your password?")
 
 
 
