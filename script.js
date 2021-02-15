@@ -8,6 +8,12 @@ var specialCharacters = ["!" , "@" , "#" , "$" , "%", "&" , "+" , " * "]
 
 
 
+var confrmLength = ""
+var confirmNumbers
+var confirmLowerCase
+var confirmUpperCase
+
+
 
 
 
