@@ -26,14 +26,62 @@ function generatePassword(){
   }
 }
   
-alert("Your password will be" + confirmLength + "characters long ")
+alert("Your password will be" + confirmLength + "characters long ");
 
 
 
-var confirmNumbers = confirm("Would you like numbers in your password?")
-var confirmLowerCase = confirm("Would you like lower case letters in your password?")
-var confirmUpperCase = confirm("Would you like upper case letters in your password?")
-var confirmSpecialCharacters = confirm("Would you liker special characters in your password?")
+var confirmNumbers = confirm("Would you like numbers in your password?");
+var confirmLowerCase = confirm("Would you like lower case letters in your password?");
+var confirmUpperCase = confirm("Would you like upper case letters in your password?");
+var confirmSpecialCharacters = confirm("Would you liker special characters in your password?");
+
+
+
+
+while(confirmNumbers === false && confirmLowerCase === false && confirmUpperCase === false && confirmSpecialCharacters === false) {
+  alert("You must choose at least one of the criteria ");
+
+  var confirmNumbers = confirm("Would you like numbers in your password?");
+var confirmLowerCase = confirm("Would you like lower case letters in your password?");
+var confirmUpperCase = confirm("Would you like upper case letters in your password?");
+var confirmSpecialCharacters = confirm("Would you liker special characters in your password?");
+
+
+
+
+
+
+
+}
+
+ var passwordCharacters = []
+
+ if(confirmNumbers){
+    passwordCharacters = passwordCharacters.concat(numbers)
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
