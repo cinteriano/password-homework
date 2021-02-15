@@ -9,11 +9,31 @@ var specialCharacters = ["!" , "@" , "#" , "$" , "%", "&" , "+" , " * "]
 
 
 var confrmLength = ""
-var confirmNumbers
-var confirmLowerCase
-var confirmUpperCase
+var confirmNumbers;
+var confirmLowerCase;
+var confirmUpperCase;
+var confirmSpecialCharacters;
 
 
+
+function generatePassword(){
+  var confirmLength = prompt(("How long would you like your password?"));
+
+  while(confirmLength <=8 || confirmLength >= 128) {
+    alert("Password must be between 8 and 128 characters");
+    var confirmLength = prompt(("Hhow long would you like your password to be?"));
+    
+  }
+}
+  
+alert("Your password will be" + confirmLength + "characters long ")
+
+
+
+var confirmNumbers = confirm("Would you like numbers in your password?")
+var confirmLowerCase = confirm()
+var confirmUpperCase = confirm()
+var confirmSpecialCharacters = confirm()
 
 
 
