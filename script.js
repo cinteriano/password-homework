@@ -58,10 +58,41 @@ var confirmSpecialCharacters = confirm("Would you liker special characters in yo
 
  if(confirmNumbers){
     passwordCharacters = passwordCharacters.concat(numbers)
+}
+
+if(confirmSpecialCharacters) {
+passwordCharacters = passwordcharacters.concat(specialCharacters)
+
+}
+
+if(confirmUpperCase){
+  passwordCharacters = passwordCharacters.concat(upperCase)
+
+
+}
+
+
+if(confirmLowerCase){
+  passwordCharacters = passwordCharacters.concat(lowerCase)
+
+
+}
+
+
+var randomPassword = ""
+
+
+for(var i = 0; i < confirmLength; i++) {
+
+ randomPassword = randomPassword + passwordCharacters[Math.floor(math.random() * passwordCharacters.length)];
+  console.log(randomPassword)
+
+}
 
 
 
- }
+
+
 
 
 
